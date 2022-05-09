@@ -2,7 +2,6 @@ using Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
-var a = config.GetConnectionString("DbBookConnection");
 builder.Services.AddPersistense(config);
 // Add services to the container.
 
