@@ -9,7 +9,6 @@ namespace Infrastructure
         public static IServiceCollection AddPersistense(this IServiceCollection services, IConfiguration config)
         {
 
-            Console.WriteLine("llego acfa");
             var a = config.GetConnectionString("DbBookConnection");
             return services.AddDbContext<BookDbContext>(DbContextOptionsBuilder  => {
                 var cadena = config.GetConnectionString("DbBookConnection");
